@@ -1,0 +1,46 @@
+<!-- FRONTEND -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Research Publications System</h1>
+        
+        <input type="text" id="search" placeholder="Search for research...">
+        <input type="date" id="date-filter">
+        
+        <div class="department" id="cict">
+            <h2>Department of CICT</h2>
+            <ul id="cict-list"></ul>
+        </div>
+        
+        <div class="department" id="cmbt">
+            <h2>Department of CMBT</h2>
+            <ul id="cmbt-list"></ul>
+        </div>
+        
+        <div class="department" id="coed">
+            <h2>Department of COED</h2>
+            <ul id="coed-list"></ul>
+        </div>
+
+        <h3>Upload New Research</h3>
+        <select id="department-select">
+            <option value="" disabled selected>Select Department</option>
+            <option value="cict">Department of CICT</option>
+            <option value="cmbt">Department of CMBT</option>
+            <option value="coed">Department of COED</option>
+        </select>
+        <input type="text" id="new-research" placeholder="Enter research title">
+        <button id="upload">Upload</button>
+        <button id="save">Save</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
